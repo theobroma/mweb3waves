@@ -11,13 +11,13 @@ import configureStore from './store';
 const store = configureStore();
 
 ReactDOM.render(
-    <Provider store={store}>
-        <ThemeProvider theme={theme}>
-            <>
-                <GlobalStyle />
-                <App />
-            </>
-        </ThemeProvider>
-    </Provider>,
-    document.getElementById('root'),
+  <Provider store={store}>
+    <ThemeProvider theme={theme}>
+      <>
+        <GlobalStyle />
+        <App />
+      </>
+    </ThemeProvider>
+  </Provider>,
+  document.getElementById('root'),
 );

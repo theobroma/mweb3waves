@@ -1,9 +1,9 @@
 import React, { FunctionComponent } from 'react';
 
 interface PriceProps {
-    isOld?: boolean;
-    term: string;
+  isOld?: boolean;
+  term: string;
 }
 
-export declare const Price:FunctionComponent<PriceProps>;
+export declare const Price: FunctionComponent<PriceProps>;
 export default Price;

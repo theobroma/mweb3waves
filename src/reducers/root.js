@@ -1,16 +1,22 @@
-import { createImmutableReducer, makeActionCreator } from '../libs/redux-actions';
+import {
+  createImmutableReducer,
+  makeActionCreator,
+} from '../libs/redux-actions';
 
 const initialState = {
-    modalMenuOpen: false,
+  modalMenuOpen: false,
 };
 
 export const INIT_APP = 'INIT_APP';
 const CHANGE_MOBILE_MENU_STATE = 'CHANGE_MOBILE_MENU_STATE';
 
-export const changeMobileMenuState = makeActionCreator(CHANGE_MOBILE_MENU_STATE, 'isOpen');
+export const changeMobileMenuState = makeActionCreator(
+  CHANGE_MOBILE_MENU_STATE,
+  'isOpen',
+);
 
 export default createImmutableReducer(initialState, {
-    [CHANGE_MOBILE_MENU_STATE]: (state, { isOpen }) => {
-        state.modalMenuOpen = isOpen;
-    },
+  [CHANGE_MOBILE_MENU_STATE]: (state, { isOpen }) => {
+    state.modalMenuOpen = isOpen;
+  },
 });

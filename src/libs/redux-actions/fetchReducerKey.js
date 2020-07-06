@@ -1,8 +1,8 @@
 export function fetchReducerKey(key, initialValue) {
-    return {
-        [key]: {
-            data: initialValue,
-            isFetching: false,
-        },
-    };
+  return {
+    [key]: {
+      data: initialValue,
+      isFetching: false,
+    },
+  };
 }

@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from 'react';
 
 interface StarProps {
-    active?: boolean;
+  active?: boolean;
 }
 
-export declare const  Star:FunctionComponent<StarProps>;
+export declare const Star: FunctionComponent<StarProps>;
 export default Star;

@@ -15,8 +15,8 @@ import {
   FlexProps,
   FlexBasisProps,
   MinWidthProps,
-  OverflowProps
-} from "styled-system";
+  OverflowProps,
+} from 'styled-system';
 
 export declare type BoxProps = SpaceProps &
   WidthProps &
@@ -36,8 +36,8 @@ export declare type BoxProps = SpaceProps &
   MinWidthProps &
   OverflowProps;
 
-declare const Box: import("styled-components").StyledComponent<
-  "div",
+declare const Box: import('styled-components').StyledComponent<
+  'div',
   any,
   BoxProps,
   never

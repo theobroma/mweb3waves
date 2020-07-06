@@ -4,7 +4,7 @@ import coupons from './coupons';
 import root from './root';
 
 export default () =>
-    combineReducers({
-        coupons,
-        root,
-    });
+  combineReducers({
+    coupons,
+    root,
+  });

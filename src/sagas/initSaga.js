@@ -5,9 +5,9 @@ import { wavesInit } from './service';
 import * as rootActions from '../reducers/root';
 
 function* init() {
-    yield fork(wavesInit);
+  yield fork(wavesInit);
 }
 
 export default function* initSaga() {
-    yield takeLatest([rootActions.INIT_APP], init);
+  yield takeLatest([rootActions.INIT_APP], init);
 }
